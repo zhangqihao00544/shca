@@ -1,0 +1,189 @@
+/* 通用样式 */
+.status-bar {
+    height: 44px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.app-header {
+    height: 48px;
+    background-color: #1F5AF3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    position: sticky;
+    top: 44px;
+    z-index: 90;
+}
+
+.tab-bar {
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.tab-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8e8e93;
+    font-size: 10px;
+    width: 20%;
+}
+
+.tab-item.active {
+    color: #1F5AF3;
+}
+
+.tab-icon {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.content-area {
+    padding: 16px;
+    padding-bottom: 76px;
+    background-color: #f7f7f7;
+    min-height: calc(100vh - 152px);
+}
+
+/* 工单卡片样式 */
+.ticket-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮样式 */
+.primary-btn {
+    background-color: #1F5AF3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.secondary-btn {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* 徽标样式 */
+.badge {
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-blue {
+    background-color: #e6f0ff;
+    color: #1F5AF3;
+}
+
+.badge-green {
+    background-color: #e6f9f0;
+    color: #10b981;
+}
+
+.badge-red {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.badge-yellow {
+    background-color: #fef3c7;
+    color: #f59e0b;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #fff;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+/* 统计卡片 */
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F5AF3;
+    margin: 4px 0;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* 动画过渡 */
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
