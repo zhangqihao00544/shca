@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管局通 - 原型预览</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .phone-frame {
+            width: 390px;
+            height: 844px;
+            border-radius: 40px;
+            overflow: hidden;
+            border: 12px solid #000;
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .phone-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .prototype-label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <header class="mb-8">
+        <h1 class="text-4xl font-bold text-center text-blue-800">管局通 App 原型</h1>
+        <p class="text-center text-gray-600 mt-2">工单处理解决方案 - 高保真原型设计</p>
+    </header>
+
+    <div class="flex flex-wrap justify-center gap-16">
+        <!-- 登录页面 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/login.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">登录页面</div>
+        </div>
+
+        <!-- 首页/工作台 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/home.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">首页/工作台</div>
+        </div>
+
+        <!-- 工单列表 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/ticket-list.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">工单列表</div>
+        </div>
+
+        <!-- 工单详情 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/ticket-detail.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">工单详情</div>
+        </div>
+
+        <!-- 创建工单 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/create-ticket.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">创建工单</div>
+        </div>
+
+        <!-- 团队协作 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/team.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">团队协作</div>
+        </div>
+
+        <!-- 消息中心 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/messages.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">消息中心</div>
+        </div>
+
+        <!-- 数据报表 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/reports.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">数据报表</div>
+        </div>
+
+        <!-- 个人中心 -->
+        <div class="flex flex-col items-center">
+            <div class="phone-frame">
+                <iframe class="phone-iframe" src="pages/profile.html" frameborder="0"></iframe>
+            </div>
+            <div class="prototype-label">个人中心</div>
+        </div>
+    </div>
+
+    <footer class="mt-10 text-center text-gray-500">
+        <p>管局通 - 通信管理局工单处理解决方案</p>
+    </footer>
+</body>
+</html> 
